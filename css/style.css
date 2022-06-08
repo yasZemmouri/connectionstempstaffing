@@ -1,0 +1,27 @@
+/*======= Reset ======*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+html{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+}
+
+/*====== Header =======*/
+#top-bar {
+    background-color: aqua;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+.navbar{
+    height: 100px;
+}
