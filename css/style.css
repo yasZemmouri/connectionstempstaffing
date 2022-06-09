@@ -5,6 +5,18 @@
     padding: 0;
     box-sizing: inherit;
 }
+:root{
+    /* --primo: #007EC0; */
+    --primo: #6A00EB;
+    /* --segundo: #3EC300; */
+    --segundo: #FF14E8;
+    /* --segundo: #00c043; */
+    --txt: #435460;
+    /* --bg2: #E5BEED; */
+    /* --bg2: #dbf9f4; */
+    --bg2: #edd7fc;
+    /* --bg2: #FCE8B8; */
+  }
 a {
     color: inherit;
     text-decoration: none;
@@ -19,9 +31,23 @@ html{
 
 /*====== Header =======*/
 #top-bar {
-    background-color: aqua;
     border-bottom: 1px solid rgb(180, 180, 180);
 }
 .navbar{
     height: 100px;
+}
+header img{
+    height: 70px;
+}
+img[src="images/phone-icon.svg"]{
+    width: 3em;
+}
+@media (min-width: 768px) {
+    img[src="images/phone-icon.svg"]{
+        width: 2em;
+    }
+    header img{
+        height: 80px;
+    }
+    
 }
