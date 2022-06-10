@@ -1,3 +1,5 @@
 --------------------------------------------------------
 6/7 makefile for github add commit push
 6/7 local bootstrap
+start using azur vm
+

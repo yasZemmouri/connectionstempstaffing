@@ -32,6 +32,9 @@ html{
 /*====== Header =======*/
 #top-bar {
     border-bottom: 1px solid rgb(180, 180, 180);
+    color: var(--segundo);
+    font-size: 1.125em;
+    letter-spacing: .6px;
 }
 .navbar{
     height: 100px;
@@ -41,13 +44,15 @@ header img{
 }
 img[src="images/phone-icon.svg"]{
     width: 3em;
+    filter: drop-shadow(0px 1px 0.5px rgba(100, 100, 100, 0.3)) drop-shadow(0px 2px 2px rgb(197, 12, 12));
 }
 @media (min-width: 768px) {
     img[src="images/phone-icon.svg"]{
         width: 2em;
+        filter: drop-shadow(0px 0px 0px)
     }
     header img{
-        height: 80px;
+        height: 90px;
     }
     
 }
