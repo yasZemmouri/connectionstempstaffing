@@ -1,5 +1,10 @@
---------------------------------------------------------
+-------------------------------------------------
+6/8
 6/7 makefile for github add commit push
 6/7 local bootstrap
-start using azur vm
+6/10
+6/9 page structure header main footer
+--------------------------------------------------------
+6/9 google font
+6/9 start using azur vm
 
