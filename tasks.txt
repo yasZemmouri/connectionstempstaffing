@@ -11,5 +11,7 @@ interactive carousel??
 bg1 4  5 
 6 good colors
 11
-background props in one line
+push git to dreamhost
+change hero image to 2560px width
+should I have the same padding 70px for all sections
 

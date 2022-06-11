@@ -6,7 +6,8 @@
     box-sizing: inherit;
 }
 :root{
-    /* --primo: #007EC0; */
+    --primo: #007EC0;
+    --primo: #118DF0;
     --primo: #6A00EB;
     /* --segundo: #3EC300; */
     --segundo: #FF14E8;
@@ -29,15 +30,41 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
+h1, h2, h3 {
+    /* line-height: 1.4; */
+    text-transform: capitalize;
+    margin-bottom: .75em;
+
+}
+h2{
+    font-size: 1.8em
+}
+h3{
+    font-size: 1.4em;
+}
+@media (min-width: 768px){
+    h2{
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 1.5em;
+    }
+}
 
 .container{
     height: 100%;
 }
-/* Flex Boxes */
+/*============= Flex Boxes ===============*/
 .flex-h-center-center {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+  }
+  .flex-h-around-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
     flex-wrap: wrap;
   }
 
@@ -82,6 +109,9 @@ footer .container{
     line-height: 60px;
     border-top: 1px solid var(--txt)
 }
+section{
+    padding: 65px 0;
+}
 /*===== Hero =====*/
 #hero{
     min-height: 76vh;
@@ -107,5 +137,32 @@ h1 span{
     font-weight: 400;
     line-height: 1.4;
     max-width: 850px;
+}
+
+/*--------------Services --------------*/
+#services{
+    background-color: var(--primo);
+    /* padding: 65px 0; */
+    color: white;
+    text-align: center;
+}
+#services figure {
+    width: 200px;
+
+}
+#services i{
+    font-size: 2.5em;
+}
+#services figure div{
+    background-color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 2em;
+    color: var(--primo)
+}
+#services p{
+    font-size: 1.2em;
 }
 
