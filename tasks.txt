@@ -7,4 +7,9 @@
 --------------------------------------------------------
 6/9 google font
 6/9 start using azur vm
+interactive carousel??
+bg1 4  5 
+6 good colors
+11
+background props in one line
 

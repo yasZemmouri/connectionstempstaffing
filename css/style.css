@@ -33,6 +33,13 @@ body{
 .container{
     height: 100%;
 }
+/* Flex Boxes */
+.flex-h-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 
 /*====== Header =======*/
 #top-bar {
@@ -51,10 +58,17 @@ img[src="images/phone-icon.svg"]{
     width: 3em;
     filter: drop-shadow(0px 1px 0.5px rgba(100, 100, 100, 0.3)) drop-shadow(0px 2px 2px rgb(197, 12, 12));
 }
+img[src="images/phone-icon.svg"]:hover{
+    transform: translateY(2px);
+}
+
 @media (min-width: 768px) {
     img[src="images/phone-icon.svg"]{
         width: 2em;
         filter: drop-shadow(0px 0px 0px)
+    }
+    img[src="images/phone-icon.svg"]:hover{
+        transform: translateY(0px);
     }
     header img{
         height: 90px;
@@ -68,3 +82,25 @@ footer .container{
     line-height: 60px;
     border-top: 1px solid var(--txt)
 }
+/*===== Hero =====*/
+#hero{
+    min-height: 76vh;
+    color: white;
+    /* background-color: green; */
+    background-image: linear-gradient(to left, rgba(10, 100, 250, 0.2), rgba(0, 0,250, 0.3)), url(../images/bg6.jpg);
+    background-position: center;
+    background-size: cover;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+h1{
+    font-size: 3rem;
+}
+h1 span{
+    display: block;
+    font-size: 2rem;
+    margin-top: 1em;
+    font-weight: 400;
+    line-height: 1.4;
+    max-width: 850px;
+}
+
