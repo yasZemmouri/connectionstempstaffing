@@ -7,8 +7,10 @@
 }
 :root{
     --primo: #007EC0;
+    --primo: #007EC0;
     --primo: #118DF0;
     --primo: #6A00EB;
+    --primo: #0a437c;
     /* --segundo: #3EC300; */
     --segundo: #FF14E8;
     /* --segundo: #00c043; */
@@ -163,6 +165,11 @@ h1 span{
     color: var(--primo)
 }
 #services p{
-    font-size: 1.2em;
+    font-size: 1.1em;
+}
+/*============== Map ===============*/
+#map iframe{
+    width: 100%;
+    height: 422px;
 }
 
