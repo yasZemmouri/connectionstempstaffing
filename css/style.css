@@ -116,7 +116,7 @@ section{
 }
 /*===== Hero =====*/
 #hero{
-    min-height: 76vh;
+    min-height: 85vh;
     color: white;
     /* background-color: green; */
     background-image: linear-gradient(to left, rgba(0, 100, 250, 0.2), rgba(0, 0,250, 0.3)), url(../images/bg6.jpg);
@@ -150,7 +150,7 @@ h1 span{
 }
 #services figure {
     width: 200px;
-    margin: auto;
+    /* margin: auto; */
 
 }
 #services i{
@@ -171,12 +171,11 @@ h1 span{
 @media (max-width: 480px) {
     #services-list{
         display: block;
-        /* text-align: center; */
     }
-    /* figure{
+    #services figure {
         margin: auto;
-    } */
-    
+    }
+ 
 }
 
 /*============== Map ===============*/
