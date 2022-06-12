@@ -31,6 +31,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: var(--txt);
 }
 h1, h2, h3 {
     /* line-height: 1.4; */
@@ -176,6 +177,37 @@ h1 span{
         margin: auto;
     }
  
+}
+/*=========== Mission ==============*/
+#mission blockquote{
+    max-width: 800px;
+    /* margin-left: auto; */
+    font-size: 1.4em;
+    margin: auto;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid var(--primo);
+    background-color: #ededed;
+    position: relative;
+}
+#mission blockquote i{
+    font-size: 1.8em;
+    color: var(--primo);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+#mission p+p{
+    font-weight: 600;
+}
+#mission p+p::after{
+    content: '';
+    background-image: url(../images/jatsignature.png);
+    background-size: cover;
+    display: inline-block;
+    width: 10em;
+    height: 3.2em;
+    vertical-align: middle;
 }
 
 /*============== Map ===============*/
