@@ -80,9 +80,11 @@ h3{
 /*====== Header =======*/
 #top-bar {
     border-bottom: 1px solid rgb(180, 180, 180);
-    color: var(--segundo);
-    font-size: 1.125em;
+    /* color: var(--segundo); */
+    font-size: 1.6em;
     letter-spacing: .6px;
+    font-weight: bold;
+    color: var(--primo)
 }
 .navbar{
     height: 100px;
