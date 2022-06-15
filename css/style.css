@@ -1,4 +1,6 @@
 /*======= Reset ======*/
+/* font-family: 'Lora', serif; */
+/* font-family: 'Montserrat', sans-serif; */
 * {
     margin: 0;
     border: 0;
@@ -14,7 +16,8 @@
     /* --segundo: #3EC300; */
     --segundo: #FF14E8;
     /* --segundo: #00c043; */
-    --txt: #435460;
+    --txt1: #7f7f7f;
+    --txt2: #435460;
     /* --bg2: #E5BEED; */
     /* --bg2: #dbf9f4; */
     --bg2: #edd7fc;
@@ -31,16 +34,19 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    color: var(--txt);
+    color: var(--txt1);
+    font-family: 'Montserrat', sans-serif;
 }
 h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
     /* line-height: 1.4; */
     text-transform: capitalize;
     margin-bottom: .75em;
 
 }
 h2{
-    font-size: 1.8em
+    font-size: 1.8em;
 }
 h3{
     font-size: 1.4em;
@@ -127,6 +133,7 @@ section{
 }
 h1{
     font-size: 3rem;
+    color: white;
 }
 @media (min-width: 768px) {
     h1{
@@ -138,6 +145,7 @@ h1 span{
     font-size: 2.5rem;
     margin-top: 1em;
     font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.4;
     max-width: 850px;
 }
@@ -176,25 +184,28 @@ h1 span{
     #services figure {
         margin: auto;
     }
- 
+    
 }
 /*=========== Mission ==============*/
+#mission h2{
+    color: var(--txt2)
+}
 #mission blockquote{
-    max-width: 800px;
+    max-width: 850px;
     /* margin-left: auto; */
     font-size: 1.4em;
     margin: auto;
     padding: 1.2em 30px 1.2em 75px;
     border-left: 8px solid var(--primo);
-    background-color: #ededed;
+    background-color: #f2f2f2;
     position: relative;
 }
 #mission blockquote i{
     font-size: 1.8em;
     color: var(--primo);
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 28px;
+    top: 10px;
 }
 
 #mission p+p{
