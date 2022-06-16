@@ -8,6 +8,11 @@
     box-sizing: inherit;
 }
 :root{
+    box-sizing: border-box;
+    --body-font: 'Montserrat', sans-serif;
+    --heading-font: 'Lora', serif;
+
+
     --primo: #007EC0;
     --primo: #007EC0;
     --primo: #118DF0;
@@ -27,36 +32,34 @@ a {
     color: inherit;
     text-decoration: none;
 }
-html{
-    box-sizing: border-box;
-}
+
 body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     color: var(--txt1);
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
 }
 h1, h2, h3 {
-    font-family: 'Lora', serif;
-    font-weight: 700;
+    font-family: var(--heading-font);
+    font-weight: 600;
     /* line-height: 1.4; */
     text-transform: capitalize;
     margin-bottom: .75em;
 
 }
 h2{
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 h3{
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 @media (min-width: 768px){
     h2{
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
     h3{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 }
 
@@ -81,10 +84,10 @@ h3{
 #top-bar {
     border-bottom: 1px solid rgb(180, 180, 180);
     /* color: var(--segundo); */
-    font-size: 1.6em;
+    font-size: 1.2rem;
     letter-spacing: .6px;
     font-weight: bold;
-    color: var(--primo)
+    color: var(--txt1)
 }
 .navbar{
     height: 100px;
@@ -93,7 +96,7 @@ header img{
     height: 70px;
 }
 img[src="images/phone-icon.svg"]{
-    width: 3em;
+    width: 2.3em;
     filter: drop-shadow(0px 1px 0.5px rgba(100, 100, 100, 0.3)) drop-shadow(0px 2px 2px rgb(197, 12, 12));
 }
 img[src="images/phone-icon.svg"]:hover{
@@ -144,10 +147,10 @@ h1{
 }
 h1 span{
     display: block;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 1em;
     font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--body-font);
     line-height: 1.4;
     max-width: 850px;
 }
@@ -176,10 +179,7 @@ h1 span{
     margin-bottom: 2em;
     color: var(--primo)
 }
-#services p{
-    font-size: 1.1em;
-}
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     #services-list{
         display: block;
     }
@@ -195,7 +195,7 @@ h1 span{
 #mission blockquote{
     max-width: 850px;
     /* margin-left: auto; */
-    font-size: 1.4em;
+    font-size: 1.2rem;
     margin: auto;
     padding: 1.2em 30px 1.2em 75px;
     border-left: 8px solid var(--primo);
