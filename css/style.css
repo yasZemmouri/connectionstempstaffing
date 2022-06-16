@@ -7,7 +7,8 @@
     padding: 0;
     box-sizing: inherit;
 }
-:root{
+
+:root {
     box-sizing: border-box;
     --body-font: 'Montserrat', sans-serif;
     --heading-font: 'Lora', serif;
@@ -27,20 +28,25 @@
     /* --bg2: #dbf9f4; */
     --bg2: #edd7fc;
     /* --bg2: #FCE8B8; */
-  }
+}
+
 a {
     color: inherit;
     text-decoration: none;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     color: var(--txt1);
     font-family: var(--body-font);
+    font-size: 1.125em;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: var(--heading-font);
     font-weight: 600;
     /* line-height: 1.4; */
@@ -48,37 +54,43 @@ h1, h2, h3 {
     margin-bottom: .75em;
 
 }
-h2{
+
+h2 {
     font-size: 1.8rem;
 }
-h3{
+
+h3 {
     font-size: 1.4rem;
 }
-@media (min-width: 768px){
-    h2{
+
+@media (min-width: 768px) {
+    h2 {
         font-size: 2.5rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.5rem;
     }
 }
 
-.container{
+.container {
     height: 100%;
 }
+
 /*============= Flex Boxes ===============*/
 .flex-h-center-center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .flex-h-around-start {
+}
+
+.flex-h-around-start {
     display: flex;
     justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
-  }
+}
 
 /*====== Header =======*/
 #top-bar {
@@ -89,63 +101,76 @@ h3{
     font-weight: bold;
     color: var(--txt1)
 }
-.navbar{
+
+.navbar {
     height: 100px;
 }
-header img{
+
+header img {
     height: 70px;
 }
-img[src="images/phone-icon.svg"]{
+
+img[src="images/phone-icon.svg"] {
     width: 2.3em;
     filter: drop-shadow(0px 1px 0.5px rgba(100, 100, 100, 0.3)) drop-shadow(0px 2px 2px rgb(197, 12, 12));
 }
-img[src="images/phone-icon.svg"]:hover{
+
+img[src="images/phone-icon.svg"]:hover {
     transform: translateY(2px);
 }
 
 @media (min-width: 768px) {
-    img[src="images/phone-icon.svg"]{
+    img[src="images/phone-icon.svg"] {
         width: 2em;
         filter: drop-shadow(0px 0px 0px)
     }
-    img[src="images/phone-icon.svg"]:hover{
+
+    img[src="images/phone-icon.svg"]:hover {
         transform: translateY(0px);
     }
-    header img{
+
+    header img {
         height: 90px;
     }
-    
+
 }
+
 main {
     flex: 1 1;
 }
-footer .container{
+
+footer .container {
     line-height: 60px;
     border-top: 1px solid var(--txt)
 }
-section{
+
+section {
     padding: 65px 0;
 }
+
 /*===== Hero =====*/
-#hero{
+#hero {
     min-height: 85vh;
     color: white;
     /* background-color: green; */
-    background-image: linear-gradient(to left, rgba(0, 100, 250, 0.2), rgba(0, 0,250, 0.3)), url(../images/bg6.jpg);
+    background-image: linear-gradient(to left, rgba(0, 100, 250, 0.2), rgba(0, 0, 250, 0.3)), url(../images/bg6.jpg);
     background-position: center;
     background-size: cover;
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
 }
-h1{
+
+h1 {
     font-size: 3rem;
     color: white;
 }
+
 @media (min-width: 768px) {
-    h1{
+    h1 {
         font-size: 4.5rem;
     }
 }
-h1 span{
+
+h1 span {
     display: block;
     font-size: 2rem;
     margin-top: 1em;
@@ -156,21 +181,24 @@ h1 span{
 }
 
 /*--------------Services --------------*/
-#services{
+#services {
     background-color: var(--primo);
     /* padding: 65px 0; */
     color: white;
     text-align: center;
 }
+
 #services figure {
     width: 200px;
     /* margin: auto; */
 
 }
-#services i{
+
+#services i {
     font-size: 2.5em;
 }
-#services figure div{
+
+#services figure div {
     background-color: white;
     border-radius: 50%;
     width: 80px;
@@ -179,20 +207,24 @@ h1 span{
     margin-bottom: 2em;
     color: var(--primo)
 }
-/* @media (max-width: 480px) {
-    #services-list{
+
+@media (max-width: 480px) {
+    #services-list {
         display: block;
     }
+
     #services figure {
         margin: auto;
     }
-    
+
 }
+
 /*=========== Mission ==============*/
-#mission h2{
+#mission h2 {
     color: var(--txt2)
 }
-#mission blockquote{
+
+#mission blockquote {
     max-width: 850px;
     /* margin-left: auto; */
     font-size: 1.2rem;
@@ -202,7 +234,8 @@ h1 span{
     background-color: #f2f2f2;
     position: relative;
 }
-#mission blockquote i{
+
+#mission blockquote i {
     font-size: 1.8em;
     color: var(--primo);
     position: absolute;
@@ -210,10 +243,11 @@ h1 span{
     top: 10px;
 }
 
-#mission p+p{
+#mission p+p {
     font-weight: 600;
 }
-#mission p+p::after{
+
+#mission p+p::after {
     content: '';
     background-image: url(../images/jatsignature.png);
     background-size: cover;
@@ -224,8 +258,7 @@ h1 span{
 }
 
 /*============== Map ===============*/
-#map iframe{
+#map iframe {
     width: 100%;
     height: 422px;
 }
-
