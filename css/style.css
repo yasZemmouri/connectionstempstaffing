@@ -139,10 +139,6 @@ main {
     flex: 1 1;
 }
 
-footer .container {
-    line-height: 60px;
-    border-top: 1px solid var(--txt)
-}
 
 section {
     padding: 65px 0;
@@ -179,6 +175,26 @@ h1 span {
     line-height: 1.4;
     max-width: 850px;
 }
+/* btn-link name already exists in bootstrap */
+.all-btn-link {
+    text-transform: uppercase;
+    /* padding: 15px 30px; */
+    /* font-size: 1.6rem; */
+    /* white-space: nowrap; */
+    /* display: inline-block; */
+
+}
+.get-in-touch-btn{
+    padding: 1em 2.5em;
+    border: 2px solid white;
+    border-radius: 90px;
+    
+}
+.get-in-touch-btn:hover{
+    background-color: white;
+    text-shadow: none;
+}
+
 
 /*--------------Services --------------*/
 #services {
@@ -217,7 +233,7 @@ h1 span {
         margin: auto;
         width: 80%;
     }
-
+    
 }
 
 /*=========== Mission ==============*/
@@ -262,4 +278,9 @@ h1 span {
 #map iframe {
     width: 100%;
     height: 422px;
+}
+/*============== Footer ===============*/
+footer .container {
+    line-height: 60px;
+    border-top: 1px solid var(--txt)
 }
