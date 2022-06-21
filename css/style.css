@@ -55,7 +55,8 @@ h3 {
 
 }
 
-h2 {
+h2,
+h1 {
     font-size: 1.8rem;
 }
 
@@ -73,9 +74,9 @@ h3 {
     }
 }
 
-.container {
+/* .container {
     height: 100%;
-}
+} */
 
 /*============= Flex Boxes ===============*/
 .flex-h-center-center {
@@ -155,18 +156,18 @@ section {
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
-h1 {
+#hero h1 {
     font-size: 3rem;
     color: white;
 }
 
 @media (min-width: 768px) {
-    h1 {
-        font-size: 4.5rem;
+    #hero h1 {
+        font-size: 4rem;
     }
 }
 
-h1 span {
+#hero h1 span {
     display: block;
     font-size: 2rem;
     margin-top: 1em;
@@ -175,22 +176,26 @@ h1 span {
     line-height: 1.4;
     max-width: 850px;
 }
+
 /* btn-link name already exists in bootstrap */
 .all-btn-link {
     text-transform: uppercase;
-    /* padding: 15px 30px; */
+    padding: 15px 30px;
     /* font-size: 1.6rem; */
     /* white-space: nowrap; */
-    /* display: inline-block; */
+    display: inline-block;
+    border-radius: 90px;
 
 }
-.get-in-touch-btn{
+
+.get-in-touch-btn {
     padding: 1em 2.5em;
     border: 2px solid white;
-    border-radius: 90px;
-    
+    /* border-radius: 90px; */
+
 }
-.get-in-touch-btn:hover{
+
+.get-in-touch-btn:hover {
     background-color: white;
     text-shadow: none;
 }
@@ -233,7 +238,7 @@ h1 span {
         margin: auto;
         width: 80%;
     }
-    
+
 }
 
 /*=========== Mission ==============*/
@@ -275,10 +280,89 @@ h1 span {
 }
 
 /*============== Map ===============*/
-#map iframe {
+#map {
+    box-sizing: content-box;
     width: 100%;
     height: 422px;
 }
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*============= CONTACT.HTML ===============*/
+.banner {
+    background-image: linear-gradient(to right, rgb(0 0 0 /10%), rgb(0 0 0 /20%)), url(../images/building.webp);
+    background-position: bottom center;
+    background-size: cover;
+    /*understand why height is 0*/
+    height: 0px;
+    min-height: 60vh;
+}
+
+.contact-wrap {
+    background-color: #44bba4;
+    background-color: #33a1fd;
+    background-color: #a0ddff;
+    background-color: #e1e5ee;
+    background-color: #c5fffd;
+    background-color: #fdfffc;
+    background-color: #dcd6f7;
+    color: var(--txt2)
+}
+
+.contactForm label,
+.contactForm p {
+    color: var(--txt2);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    min-height: 44px;
+    /* background-color: white; */
+    font-size: 14px;
+    border-radius: 20px;
+    color: rgb(0 0 0 /80%);
+    background-image: linear-gradient(to top, var(--primo) 50%, white 50%);
+    background-size: auto 60px;
+    background-repeat: no-repeat;
+    background-position: left 0 bottom -30px;
+    transition: background-position .10s ease-in-out;
+}
+
+.form-control:focus,
+.form-control:active {
+    background-position: left 0 bottom -24px;
+    box-shadow: none;
+
+}
+
+.make-inquiry-btn {
+    background-color: #44bba4;
+    background-image: linear-gradient(to right, var(--primo) 50%, #44bba4 50%);
+    background-position: right;
+    background-size: 210% 100%;
+    transition: all 0.5s;
+    box-shadow: 0px 10px 20px -6px rgb(0 0 0 /20%);
+}
+
+.make-inquiry-btn:hover {
+    background-position: left;
+    color: white;
+}
+
+/* #contact h1{
+    color: var(--txt2);
+    font-size: 1.2em;
+} */
 /*============== Footer ===============*/
 footer .container {
     line-height: 60px;
