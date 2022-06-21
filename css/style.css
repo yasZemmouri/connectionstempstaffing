@@ -347,15 +347,15 @@ iframe {
 
 .make-inquiry-btn {
     background-color: #44bba4;
-    background-image: linear-gradient(to right, var(--primo) 50%, #44bba4 50%);
-    background-position: right;
-    background-size: 210% 100%;
-    transition: all 0.5s;
+    background-image: linear-gradient(to top, var(--primo) 50%, #44bba4 50%);
+    background-position: top;
+    background-size: 100% 210%;
+    transition: all 0.25s;
     box-shadow: 0px 10px 20px -6px rgb(0 0 0 /20%);
 }
 
 .make-inquiry-btn:hover {
-    background-position: left;
+    background-position: bottom;
     color: white;
 }
 
