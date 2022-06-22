@@ -378,6 +378,33 @@ iframe {
         height: 500px;
         margin: 0 -0.75rem;
     }
+    .contact-wrap{
+        width: 100vw !important;
+        margin-left: -0.75rem;
+    }
+  }
+  /*dbox was created just to select its children*/
+  .dbox .icon{
+    width: 60px;
+    height: 60px;
+    background-color: var(--primo);
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .dbox .text{
+    /* width: 100%; */
+  }
+  .dbox p{
+    margin-bottom: 0;
+    /* font-size: 1em; */
+    line-height: 1.8em;
+  }
+  .dbox p span{
+    font-weight: 600;
+    color: var(--txt2);
   }
 /* #contact h1{
     color: var(--txt2);
