@@ -47,4 +47,6 @@ Filter out listeners that call preventDefault().
 Filter out listeners that are from a different host than the page.
 Why optimize it?
 We recommend you to fix it to improve your webpage user experience
+train to do media queries
+train linear gradient
 

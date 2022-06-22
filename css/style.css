@@ -358,7 +358,27 @@ iframe {
     background-position: bottom;
     color: white;
 }
-
+/*Why??*/
+.wrapper {
+    width: 100%;
+}
+.no-gutters{
+    margin-right: 0;
+    margin-left: 0;
+}
+.no-gutters> [class*="col-"]{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .contact-map-container{
+    height: 100%;
+  }
+  @media (max-width: 480px){
+    .contact-map-container{
+        height: 500px;
+        margin: 0 -0.75rem;
+    }
+  }
 /* #contact h1{
     color: var(--txt2);
     font-size: 1.2em;
