@@ -411,6 +411,11 @@ iframe {
     color: var(--txt2);
     font-size: 1.2em;
 } */
+
+#confirmation{
+    background-color: var(--bg2);
+    
+}
 /*============== Footer ===============*/
 footer .container {
     line-height: 60px;
