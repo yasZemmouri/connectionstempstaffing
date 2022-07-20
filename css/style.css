@@ -24,10 +24,10 @@
     /* --segundo: #00c043; */
     --txt1: #7f7f7f;
     --txt2: #435460;
-    /* --bg2: #E5BEED; */
-    /* --bg2: #dbf9f4; */
+    --bg2: #E5BEED;
+    --bg2: #dbf9f4;
+    --bg2: #6ca6e0;
     --bg2: #edd7fc;
-    /* --bg2: #FCE8B8; */
 }
 
 a {
@@ -279,6 +279,26 @@ section {
     vertical-align: middle;
 }
 
+/*============== welcome Section ===============*/
+#welcome{
+    text-align: center;
+    background-color: var(--bg2);
+
+}
+#welcome p{
+    /* font-size: 1rem; */
+}
+#welcome h3{
+    font-size: 1.5em;
+}
+#welcome .card{
+    border: none;
+    background-color: inherit;
+}
+figure img{
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgb(0 0 0 /30%) 
+}
 /*============== Map ===============*/
 #map {
     box-sizing: content-box;
@@ -321,6 +341,9 @@ iframe {
     font-weight: 600;
     margin-bottom: 0;
 }
+label span{
+    color: red;
+}
 
 .form-group {
     margin-bottom: 1rem;
@@ -348,15 +371,15 @@ iframe {
 
 .make-inquiry-btn {
     background-color: #44bba4;
-    background-image: linear-gradient(to top, var(--primo) 50%, #44bba4 50%);
-    background-position: top;
-    background-size: 100% 210%;
+    background-image: linear-gradient(to right, var(--primo) 50%, #44bba4 50%);
+    background-position: right;
+    background-size: 210% 100%;
     transition: all 0.25s;
     box-shadow: 0px 10px 20px -6px rgb(0 0 0 /20%);
 }
 
 .make-inquiry-btn:hover {
-    background-position: bottom;
+    background-position: left;
     color: white;
 }
 /*Why??*/

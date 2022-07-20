@@ -52,3 +52,12 @@ train linear gradient
 learn to use calc();
 border-bottom effect
 
+review querySelectorAll and use it to do phone or mail asterix
+document.querySelectorAll('[property]'); // All with attribute named "property"
+document.querySelectorAll('[property="value"]'); // All with "property" set to "value" exactly.
+
+automatization of commands 
+automatization of html code generate section with container inside.
+comment title that reduce code
+use my own font size
+
