@@ -10,6 +10,7 @@
 
 :root {
     box-sizing: border-box;
+    font-size: 62.5%;
     --body-font: 'Montserrat', sans-serif;
     --heading-font: 'Lora', serif;
 
@@ -28,12 +29,9 @@
     --bg2: #dbf9f4;
     --bg2: #6ca6e0;
     --bg2: #edd7fc;
+    --bg2: #FCF7F3;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
 
 body {
     display: flex;
@@ -41,7 +39,16 @@ body {
     min-height: 100vh;
     color: var(--txt1);
     font-family: var(--body-font);
-    font-size: 1.125em;
+    font-size: 1.8em;
+}
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h1,
@@ -52,26 +59,39 @@ h3 {
     /* line-height: 1.4; */
     text-transform: capitalize;
     margin-bottom: .75em;
+    color: var(--txt2);
 
 }
+p{
+    margin-bottom: .75em
+}
+h1{
+    font-size: 6.4rem;
+}
 
-h2,
-h1 {
-    font-size: 1.8rem;
+h2{
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
 }
 
-@media (min-width: 768px) {
+.wht-txt{
+    color: white;
+}
+.wht-txt h2, .wht-txt h3{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 4.5rem;
+    }
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.9rem;
     }
 
-    h3 {
-        font-size: 1.5rem;
-    }
 }
 
 /* .container {
@@ -91,13 +111,14 @@ h3 {
     justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 /*====== Header =======*/
 #top-bar {
     border-bottom: 1px solid rgb(180, 180, 180);
     /* color: var(--segundo); */
-    font-size: 1.2rem;
+    font-size: 1.1em;
     letter-spacing: .6px;
     font-weight: bold;
     color: var(--txt1)
@@ -108,30 +129,30 @@ h3 {
 }
 
 header img {
-    height: 70px;
+    height: 90px;
 }
 
 img[src="images/phone-icon.svg"] {
-    width: 2.5em;
-    filter: drop-shadow(0px 1px 0.5px rgba(100, 100, 100, 0.3)) drop-shadow(0px 2px 2px rgb(197, 12, 12));
+    width: 2em;
+    filter: drop-shadow(0px 0px 0px);
 }
 
 img[src="images/phone-icon.svg"]:hover {
     transform: translateY(2px);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     img[src="images/phone-icon.svg"] {
-        width: 2em;
-        filter: drop-shadow(0px 0px 0px)
+        width: 2.5em;
+        filter: drop-shadow(0px 1px 0.5px rgba(100, 100, 100, 0.3)) drop-shadow(0px 2px 2px rgb(197, 12, 12));
     }
-
+    
     img[src="images/phone-icon.svg"]:hover {
         transform: translateY(0px);
     }
-
+    
     header img {
-        height: 90px;
+        height: 70px;
     }
 
 }
@@ -157,19 +178,13 @@ section {
 }
 
 #hero h1 {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     color: white;
-}
-
-@media (min-width: 768px) {
-    #hero h1 {
-        font-size: 4rem;
-    }
 }
 
 #hero h1 span {
     display: block;
-    font-size: 2rem;
+    font-size: 3.2rem;
     margin-top: 1em;
     font-weight: 400;
     font-family: var(--body-font);
@@ -225,15 +240,12 @@ section {
     width: 80px;
     height: 80px;
     margin: auto;
-    margin-bottom: 2em;
+    margin-bottom: 1.9rem;
     color: var(--primo)
 }
 
-@media (max-width: 480px) {
-    #services-list {
-        display: block;
-    }
 
+@media (max-width: 480px) {
     #services figure {
         margin: auto;
         width: 80%;
@@ -249,16 +261,16 @@ section {
 #mission blockquote {
     max-width: 850px;
     /* margin-left: auto; */
-    font-size: 1.2rem;
+    font-size: 1.95rem;
     margin: auto;
     padding: 1.2em 30px 1.2em 75px;
     border-left: 8px solid var(--primo);
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
     position: relative;
 }
 
 #mission blockquote i {
-    font-size: 1.8em;
+    font-size: 3.5rem;
     color: var(--primo);
     position: absolute;
     left: 28px;
@@ -266,6 +278,7 @@ section {
 }
 
 #mission p+p {
+    margin-top: 1.5rem;
     font-weight: 600;
 }
 
@@ -289,7 +302,7 @@ section {
     /* font-size: 1rem; */
 }
 #welcome h3{
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
 }
 #welcome .card{
     border: none;
@@ -298,6 +311,12 @@ section {
 figure img{
     margin-bottom: 20px;
     box-shadow: 0 0 15px rgb(0 0 0 /30%) 
+}
+.card-title{
+    margin-bottom: .75em;
+}
+.card-body{
+    padding: 1.6rem;
 }
 /*============== Map ===============*/
 #map {
@@ -442,5 +461,6 @@ label span{
 /*============== Footer ===============*/
 footer .container {
     line-height: 60px;
-    border-top: 1px solid var(--txt)
+    border-top: 1px solid var(--txt);
+    font-size: 1.6rem;
 }
