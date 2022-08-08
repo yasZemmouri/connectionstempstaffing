@@ -41,7 +41,8 @@ body {
     font-family: var(--body-font);
     font-size: 1.8em;
 }
-.container{
+
+.container {
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -62,14 +63,16 @@ h3 {
     color: var(--txt2);
 
 }
-p{
+
+p {
     margin-bottom: .75em
 }
-h1{
+
+h1 {
     font-size: 6.4rem;
 }
 
-h2{
+h2 {
     font-size: 4rem;
 }
 
@@ -77,14 +80,16 @@ h3 {
     font-size: 2.4rem;
 }
 
-.text-white h2, .text-white h3{
+.text-white h2,
+.text-white h3 {
     color: white;
 }
 
 @media (max-width: 768px) {
-    h1{
+    h1 {
         font-size: 4.5rem;
     }
+
     h2 {
         font-size: 2.9rem;
     }
@@ -147,11 +152,11 @@ img[src="images/phone-icon.svg"]:hover {
         width: 2.5em;
         filter: drop-shadow(0px 1px 0.5px rgba(100, 100, 100, 0.3)) drop-shadow(0px 2px 2px rgb(197, 12, 12));
     }
-    
+
     img[src="images/phone-icon.svg"]:hover {
         transform: translateY(0px);
     }
-    
+
     header img {
         height: 70px;
     }
@@ -175,6 +180,7 @@ section {
     background-image: linear-gradient(to left, rgba(0, 100, 250, 0.2), rgba(0, 0, 250, 0.3)), url(../images/bg6.jpg);
     /*background-position-y is decided by logic.js inline styling.
     /* background-position-y: 0; */
+    background-position-x: center;
     background-size: cover;
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
@@ -297,47 +303,57 @@ section {
 }
 
 /*============== welcome Section ===============*/
-#welcome{
+#welcome {
     text-align: center;
     background-color: var(--bg2);
 
 }
-#welcome p{
+
+#welcome p {
     /* font-size: 1rem; */
 }
-#welcome h3{
+
+#welcome h3 {
     /* font-size: 1.5em; */
 }
-#welcome .card{
+
+#welcome .card {
     border: none;
     background-color: inherit;
 }
-figure img{
+
+figure img {
     margin-bottom: 20px;
-    box-shadow: 0 0 15px rgb(0 0 0 /30%) 
+    box-shadow: 0 0 15px rgb(0 0 0 /30%)
 }
-.card-title{
+
+.card-title {
     margin-bottom: .75em;
 }
-.card-body{
+
+.card-body {
     padding: 1.6rem;
 }
+
 /*============== Easy ===============*/
-#easy{
+#easy {
     background-image: linear-gradient(to right, rgb(63 135 185 /0.8), rgba(10, 50, 226, 0.3)), url(../images/shutterstock_479909611free-fhd.webp);
     background-position: top center;
     min-height: 650px;
     font-size: 2.4rem;
 }
-@media (max-width: 760px){
-    #easy{
-      min-height: 500px;
-      background-position: top left;
+
+@media (max-width: 760px) {
+    #easy {
+        min-height: 500px;
+        background-position: top left;
     }
-  }
-  .inherit-child-width{
+}
+
+.inherit-child-width {
     width: max-content;
-  }
+}
+
 /*============== Map ===============*/
 #map {
     box-sizing: content-box;
@@ -380,7 +396,8 @@ iframe {
     font-weight: 600;
     margin-bottom: 0;
 }
-label span{
+
+label span {
     color: red;
 }
 
@@ -421,33 +438,40 @@ label span{
     background-position: left;
     color: white;
 }
+
 /*Why??*/
 .wrapper {
     width: 100%;
 }
-.no-gutters{
+
+.no-gutters {
     margin-right: 0;
     margin-left: 0;
 }
-.no-gutters> [class*="col-"]{
+
+.no-gutters>[class*="col-"] {
     padding-right: 0;
     padding-left: 0;
-  }
-  .contact-map-container{
+}
+
+.contact-map-container {
     height: 100%;
-  }
-  @media (max-width: 480px){
-    .contact-map-container{
+}
+
+@media (max-width: 480px) {
+    .contact-map-container {
         height: 500px;
         margin: 0 -0.75rem;
     }
-    .contact-wrap{
+
+    .contact-wrap {
         width: 100vw !important;
         margin-left: -0.75rem;
     }
-  }
-  /*dbox was created just to select its children*/
-  .dbox .icon{
+}
+
+/*dbox was created just to select its children*/
+.dbox .icon {
     width: 60px;
     height: 60px;
     background-color: var(--primo);
@@ -456,28 +480,32 @@ label span{
     color: white;
     margin: auto;
     margin-bottom: 20px;
-  }
-  /*.dbox .text{
+}
+
+/*.dbox .text{
      width: 100%;
   }*/
-  .dbox p{
+.dbox p {
     margin-bottom: 0;
     /* font-size: 1em; */
     line-height: 1.8em;
-  }
-  .dbox p span{
+}
+
+.dbox p span {
     font-weight: 600;
     color: var(--txt2);
-  }
+}
+
 /* #contact h1{
     color: var(--txt2);
     font-size: 1.2em;
 } */
 
-#confirmation{
+#confirmation {
     background-color: var(--bg2);
-    
+
 }
+
 /*============== Footer ===============*/
 footer .container {
     line-height: 60px;
