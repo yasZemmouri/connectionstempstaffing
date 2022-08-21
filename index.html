@@ -40,7 +40,8 @@
                     <img src="images/logo1.png" alt="Connections, Inc. Logo">
                 </a>
                 <div class="ms-auto">
-                    <a href="tel: +18573128733">
+                    <!--with no space inside href "tel: xxx"-->
+                    <a href="tel:+18573128733">
                         <img src="images/phone-icon.svg" alt="Phone icon">
                         <span class="d-none d-md-inline">(857) 312-8733</span>
                     </a>
@@ -50,7 +51,7 @@
     </header>
     <!--================= Main ==============-->
     <main id="home">
-        <!------------ Hero ------------>
+        <!--====== Hero ======-->
         <section id="hero" class="flex-h-center-center">
             <div class="container">
                 <h1>Connections, Inc. <span> In-Home care. The best retirement home is your own. </span>
@@ -58,7 +59,7 @@
                 <a href="contact.html" class="get-in-touch-btn all-btn-link">Get in touch</a>
             </div>
         </section>
-        <!------------ Services--------->
+        <!--====== Services ======-->
         <section id="services" class="text-white">
             <div class="container">
                 <h2>What we can do for you</h2>
@@ -111,7 +112,7 @@
                 </div>
             </div>
         </section>
-        <!--------- Mission -------->
+        <!--====== Mission ======-->
         <section id="mission">
             <div class="container">
                 <h2>Our Mission</h2>
@@ -123,7 +124,7 @@
                 </blockquote>
             </div>
         </section>
-        <!------------ Welcome ------------->
+        <!--====== Welcome ======-->
         <section id="welcome">
             <div class="container">
                 <h2>welcome to connections!</h2>
@@ -168,17 +169,19 @@
                         </figure>
                     </div>
                 </div>
-        </section>
-        <!------------ Easy ------------->
-        <section id="easy" class="text-white d-flex align-items-center">
-            <div class="container inherit-child-width">
-                <h2>car is easier than ever!</h2>
-                <p> Let us treat your loved onces like family.<br />Call us directly - <a href="tel: +18573128733">(857)
-                        312-8733</a>
-                </p>
             </div>
         </section>
-        <!------------ Why Us ------------->
+        <!--====== Easy ======-->
+        <section id="easy" class="text-white d-flex align-items-center">
+            <div class="container inherit-child-width">
+                <h2>care is easier than ever!</h2>
+                <p> Let us treat your loved onces like family.<br />Call us directly - <a href="tel:+18573128733">(857)
+                        312-8733</a>
+                </p>
+                <p><a href="contact.html" class="all-btn-link easy-btn">get in touch</a></p>
+            </div>
+        </section>
+        <!--====== Why Us ======-->
         <section id=why-us class="text-center">
             <div class='container'>
                 <h2>why choose us</h2>
@@ -276,11 +279,10 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
-        <!------------ Map ------------->
+        <!--====== Map ======-->
         <section id="map">
-            <iframe
+            <iframe title="Connections, Inc Address on Google Maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.874055946241!2d-71.12080014910346!3d42.281211747968065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37f66aceeab87%3A0x97bbebf13ab0e012!2sConnections%2C%20Inc.%2FHome%20Care%20Specialists!5e0!3m2!1sen!2sus!4v1648135931449!5m2!1sen!2sus"
                 style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </section>
@@ -289,6 +291,11 @@
     <footer>
         <div class="container"> Connections &copy; 2021. All Rights Reserved. </div>
     </footer>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
     <script src="js/logic.js"></script>
 </body>
 

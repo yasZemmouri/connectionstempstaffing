@@ -30,6 +30,7 @@
     --bg2: #6ca6e0;
     --bg2: #edd7fc;
     --bg2: #FCF7F3;
+    /* --bg2: #D7E1E7; */
 }
 
 
@@ -40,6 +41,8 @@ body {
     color: var(--txt1);
     font-family: var(--body-font);
     font-size: 1.8em;
+    /* width: 100vw; */
+    /* overflow: hidden; */
 }
 
 /* flex-boxes */
@@ -188,6 +191,7 @@ section {
 #hero {
     min-height: 100vh;
     color: white;
+    background-color: #6A00EB;
     /* background-color: green; */
     background-image: linear-gradient(to left, rgba(0, 100, 250, 0.2), rgba(0, 0, 250, 0.3)), url(../images/bg6.jpg);
     /*background-position-y is decided by logic.js inline styling.
@@ -222,6 +226,7 @@ section {
     /* white-space: nowrap; */
     display: inline-block;
     border-radius: 90px;
+    font-size: 1.8rem;
 
 }
 
@@ -235,6 +240,55 @@ section {
 .get-in-touch-btn:hover {
     background-color: white;
     text-shadow: none;
+}
+
+.easy-btn {
+    background-color: transparent;
+    /* border: 2px solid; */
+    margin: auto;
+    position: relative;
+    /* overflow: hidden; */
+    z-index: 0;
+}
+
+.easy-btn::before {
+    /* transition-duration: 0.5s; */
+    box-shadow: inset 0 0 0 2px white;
+    /* z-index: 0; */
+}
+
+.easy-btn::before {
+    content: "";
+    position: absolute;
+    background-color: var(--primo);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.25s ease;
+    border-radius: 90px;
+    z-index: -1;
+
+}
+
+#easy .container {
+    background-color: rgba(0, 126, 192, 0.5);
+    border-radius: 10px;
+}
+
+/* .easy-btn::after {
+    content: 'Get In Touch';
+    position: relative;
+    color: white;
+} */
+
+/* .easy-btn:hover::after {
+    color: var(--primo);
+} */
+
+.easy-btn:hover::before {
+    box-shadow: inset 0 0 0 160px white;
+
 }
 
 
@@ -252,8 +306,10 @@ section {
 
 }
 
+
 #services i {
     font-size: 2.5em;
+    color: var(--primo);
 }
 
 #services figure div {
@@ -352,7 +408,11 @@ figure img {
     background-image: linear-gradient(to right, rgb(63 135 185 /0.8), rgba(10, 50, 226, 0.3)), url(../images/shutterstock_479909611free-fhd.webp);
     background-position: top center;
     min-height: 650px;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+}
+
+#easy p+p {
+    text-align: center;
 }
 
 @media (max-width: 760px) {
@@ -477,6 +537,7 @@ iframe {
     height: 0px;
     min-height: 60vh;
     transform-origin: bottom;
+    /* position: absolute; */
 }
 
 
