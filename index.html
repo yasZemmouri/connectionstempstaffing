@@ -21,8 +21,11 @@
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
     <!-- Style -->
+    <!-- Vendor Style  -->
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- AOS Liberay -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--put custom css under bootstrap css-->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -54,9 +57,12 @@
         <!--====== Hero ======-->
         <section id="hero" class="flex-h-center-center">
             <div class="container">
-                <h1>Connections, Inc. <span> In-Home care. The best retirement home is your own. </span>
+                <h1 data-aos="fade-down" data-aos-duration="500">Connections, Inc. <span data-aos="fade-right"
+                        data-aos-delay="600" data-aos-duration="1100"> In-Home care. The best retirement home is your
+                        own. </span>
                 </h1>
-                <a href="contact.html" class="get-in-touch-btn all-btn-link">Get in touch</a>
+                <a href="contact.html" class="get-in-touch-btn all-btn-link" data-aos="fade-up" data-aos-delay="1800"
+                    data-aos-duration="700" data-aos-easing="ease-in-out">Get in touch</a>
             </div>
         </section>
         <!--====== Services ======-->
@@ -118,8 +124,9 @@
                 <h2>Our Mission</h2>
                 <blockquote>
                     <i class="fa-solid fa-quote-left"></i>
-                    <p> We start by making the patient assessment and follow through. Directing the Home Care program
-                        every step of the way, until the patient is discharged. </p>
+                    <p> Our mission is to provide home care services to the elderly, as well as people with disabilities
+                        or illnesses, to provide training and support, and to enhance the quality of life and job
+                        opportunities in our community. </p>
                     <p>David Jthani &nbsp; </p>
                 </blockquote>
             </div>
@@ -295,6 +302,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <!-- AOS JS  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- custom js -->
     <script src="js/logic.js"></script>
 </body>

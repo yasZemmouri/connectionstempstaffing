@@ -203,6 +203,12 @@ section {
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
+/* 
+#hero .container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+} */
+
 #hero h1 {
     /* font-size: 3rem; */
     color: white;
