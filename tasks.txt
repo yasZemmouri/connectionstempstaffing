@@ -61,3 +61,5 @@ automatization of html code generate section with container inside.
 comment title that reduce code
 use my own font size
 parallax for hero bg image.
+
+try a different preloader effect from https://loading.io/css/

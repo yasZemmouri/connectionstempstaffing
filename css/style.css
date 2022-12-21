@@ -33,7 +33,7 @@
     /* --bg2: #D7E1E7; */
 }
 
-
+/*-------------- General  -------------------*/
 body {
     display: flex;
     flex-direction: column;
@@ -129,6 +129,56 @@ h4 {
     align-items: start;
     flex-wrap: wrap;
     row-gap: 20px;
+}
+
+/*-------------------------------------------------
+# Preloader
+-------------------------------------------------*/
+/* Try a different preloader effect  */
+#preloader {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    background-color: var(--primo);
+    /* overflow: hidden; */
+    z-index: 999;
+    transition: all .6s ease-out;
+}
+
+#preloader::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Or top: calc(50%-30px) */
+    width: 60px;
+    height: 60px;
+    border: 6px solid grey;
+    border-color: transparent white white white;
+    border-radius: 50%;
+    -webkit-animation: animate-preloader 1.5s linear infinite;
+    animation: animate-preloader 1.5s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /*====== Header =======*/

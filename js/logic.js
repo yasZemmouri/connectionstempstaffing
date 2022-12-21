@@ -1,9 +1,18 @@
+// The DOMContentLoaded event fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading. A different event, load , should be used only to detect a fully-loaded page.
 
 document.addEventListener('DOMContentLoaded', () => {
     "use strict";
-
+    const preloaderEl = document.getElementById('preloader');
     const heroEl = document.getElementById("hero");
-    const bannerEl = document.getElementById('banner')
+    const bannerEl = document.getElementById('banner');
+
+    //Preloader
+    if (preloaderEl) {
+        window.addEventListener('load', () => {
+            // remove an entire element from the dom 
+            preloaderEl.remove();
+        });
+    }
 
     //parallax function
     window.addEventListener("scroll", function () {
