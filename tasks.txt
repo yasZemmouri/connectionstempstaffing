@@ -1,28 +1,21 @@
 -------------------------------------------------
-6/8
 6/7 makefile for github add commit push
 6/7 local bootstrap
-6/10
-6/9 page structure header main footer
 --------------------------------------------------------
-6/9 google font
 interactive carousel??
-bg1 4  5 
-6 good colors
-11
 push git to dreamhost
 change hero image to 2560px width
 should I have the same padding 70px for all sections
 6/11 redo services
 6/11 connect to google management
-6/11 select better colors
-6/11 map
+
 6/9 start using azur vm
 
 chronic conditions
 hospital discharge assistance 
 hospice support
 
+Taken
 Alzheimers and Dementia Care
 If your loved one has Alzheimer's Disease or related dementia (ADRD), we can help. We’ll make sure your loved one is safe and supported. Our caregivers are trained in habilitation therapy the best standard of care for all types of dementia.
 
