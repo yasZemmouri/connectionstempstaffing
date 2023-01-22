@@ -140,6 +140,7 @@ h4 {
     inset: 0;
     overflow: hidden;
     background-color: var(--primo);
+    /* opacity: 0.2; */
     /* overflow: hidden; */
     z-index: 999;
     transition: all .6s ease-out;
@@ -148,10 +149,11 @@ h4 {
 #preloader::before {
     content: "";
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Or top: calc(50%-30px) */
+    /* I cannot use transform: translate to center it because the transform rule from the animation will override it */
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    /* top: 50%; */
+    /* left: 50%; */
     width: 60px;
     height: 60px;
     border: 6px solid grey;
@@ -159,6 +161,23 @@ h4 {
     border-radius: 50%;
     -webkit-animation: animate-preloader 1.5s linear infinite;
     animation: animate-preloader 1.5s linear infinite;
+}
+
+hr {
+    position: fixed;
+    background-color: yellow;
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    margin: 0;
+}
+
+.vr {
+    position: fixed;
+    background-color: yellow;
+    width: 1px;
+    height: 100vh;
+    left: 50%;
 }
 
 @-webkit-keyframes animate-preloader {
@@ -370,7 +389,7 @@ section {
 }
 
 #mission blockquote {
-    max-width: 850px;
+    max-width: 1000px;
     /* margin-left: auto; */
     font-size: 2.1rem;
     margin: auto;
@@ -388,12 +407,12 @@ section {
     top: 10px;
 }
 
-#mission p+p {
+#mission blockquote p:last-child {
     margin-top: 1.5rem;
     font-weight: 600;
 }
 
-#mission p+p::after {
+#mission blockquote p:last-child::after {
     content: '';
     background-image: url(../images/jatsignature.png);
     background-size: cover;

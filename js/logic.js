@@ -6,7 +6,7 @@ const preloaderEl = document.getElementById('preloader');
 const heroEl = document.getElementById("hero");
 const bannerEl = document.getElementById('banner');
 
-//Preloader
+// Preloader
 if (preloaderEl) {
     window.addEventListener('load', () => {
         // remove an entire element from the dom 
