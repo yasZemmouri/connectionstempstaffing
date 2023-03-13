@@ -395,13 +395,16 @@ section {
 #mission blockquote {
     max-width: 1000px;
     /* margin-left: auto; */
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     margin: auto;
-    padding: 1.2em 30px 1.2em 75px;
+    padding: 1.3em 30px 1.2em 75px;
     border-left: 8px solid var(--primo);
     /* background-color: #f2f2f2; */
     position: relative;
 }
+
+
+
 
 #mission blockquote i {
     font-size: 3.5rem;
@@ -409,6 +412,19 @@ section {
     position: absolute;
     left: 28px;
     top: 10px;
+}
+
+@media (max-width: 480px) {
+    #mission blockquote {
+        padding: 1.3em 20px 1.2em 45px;
+    }
+
+    #mission blockquote i {
+        font-size: 3.2rem;
+        left: 10px;
+        top: 5px;
+    }
+
 }
 
 #mission blockquote p:last-child {
