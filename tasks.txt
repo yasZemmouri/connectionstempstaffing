@@ -56,3 +56,23 @@ use my own font size
 parallax for hero bg image.
 
 try a different preloader effect from https://loading.io/css/
+
+Text:
+We offer a free in-home assessment to evaluate your needs.
+Our experienced caregivers will develop a customized care plan for you.
+Contact us today to schedule your free assessment and learn more about our personalized home care services.
+
+At our home care agency, we operate using an employee model, which means that all of our caregivers are employees of our agency. This allows us to ensure that our caregivers are fully trained, licensed, and insured, and that they receive ongoing supervision and support to provide the highest quality care. Additionally, as employees of our agency, our caregivers are subject to background checks and drug testing to ensure the safety and security of our clients. When you choose our employee model agency, you can have peace of mind knowing that your loved one is in good hands. Contact us today to learn more about our home care services and how we can support you and your family.
+
+At our agency, our caregivers are employees who are fully trained and licensed, and receive ongoing supervision and support to provide high-quality care. By choosing our employee model agency, you can trust that your loved one is receiving top-notch care from a team of qualified professionals. Contact us today to learn more about our services and how we can provide the support your family needs.
+
+A social worker conducts an assessment for each client to determine what services
+                                    are needed, and to identify risks in the home. 
+
+At our home care agency, we understand the importance of finding a caregiver who is the right fit for your loved one. That's why we offer a comfort match guarantee, which means that if you are not completely satisfied with your caregiver for any reason, we will work with you to find a replacement until we find the right match. Our goal is to ensure that our clients feel comfortable and confident in the care they receive from our agency. Contact us today to learn more about our comfort match guarantee and how we can provide the personalized home care services your family needs.
+
+At our home care agency, we take great care in selecting and hiring caregivers who are not only qualified and experienced but also bonded for your peace of mind. Our caregivers undergo thorough background checks, including criminal history and reference checks, to ensure they are trustworthy and reliable. Additionally, we provide our caregivers with ongoing training and support to ensure they are up-to-date with the latest care techniques and best practices. When you choose our agency, you can have confidence knowing that your loved one is receiving care from a qualified and trusted caregiver. Contact us today to learn more about our home care services and how we can support your family.
+
+At our home care agency, we strive to make home care as easy and stress-free as possible. With our simple 1 2 3 approach, you can quickly and easily receive the care you need. The first step is to contact us and schedule a free in-home assessment. Next, we'll work with you to develop a customized care plan tailored to your unique needs. Finally, we'll match you with a qualified and compassionate caregiver who will provide the care and support you need in the comfort of your own home. With our easy 1 2 3 approach, you can trust that you're in good hands. Contact us today to learn more about our home care services and how we can support your family.
+
+At our home care agency, we understand that emergencies can happen at any time, day or night. That's why we offer 24/7 availability to ensure that you always have access to the care you need. Whether you need assistance with daily living activities, medication management, or simply someone to talk to, our team of qualified caregivers is available around the clock to provide compassionate and reliable care. With our 24/7 availability, you can have peace of mind knowing that you or your loved one is never alone. Contact us today to learn more about our home care services and how we can support your family.

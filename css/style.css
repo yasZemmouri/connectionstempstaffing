@@ -40,9 +40,9 @@ body {
     min-height: 100vh;
     color: var(--txt1);
     font-family: var(--body-font);
-    font-size: 1.8em;
+    font-size: 1.6em;
     /* width: 100vw; */
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* flex-boxes */
@@ -600,6 +600,11 @@ iframe {
 }
 
 /*============= CONTACT.HTML ===============*/
+#contact {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 #banner {
     background-image: linear-gradient(to right, rgb(0 0 0 /10%), rgb(0 0 0 /20%)), url(../images/building.webp);
     width: 120%;
