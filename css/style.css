@@ -42,7 +42,7 @@ body {
     font-family: var(--body-font);
     font-size: 1.8em;
     /* width: 100vw; */
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 /* flex-boxes */
@@ -215,11 +215,15 @@ hr {
 }
 
 .navbar {
-    height: 90px;
+    height: 80px;
+}
+
+.navbar .logo {
+    height: calc(100% - 1rem);
 }
 
 header img {
-    height: 85px;
+    height: 100%;
 }
 
 img[src="images/phone-icon.svg"] {
