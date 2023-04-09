@@ -100,6 +100,12 @@ h4 {
     color: white;
 }
 
+@media(max-width: 992px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 4.5rem;
@@ -161,6 +167,10 @@ h4 {
     border-radius: 50%;
     -webkit-animation: animate-preloader 1.5s linear infinite;
     animation: animate-preloader 1.5s linear infinite;
+}
+
+.header-spacer {
+    height: 80px;
 }
 
 hr {
@@ -442,7 +452,7 @@ section {
     vertical-align: middle;
 }
 
-/*============== welcome Section ===============*/
+/*============== welcome ===============*/
 #welcome {
     text-align: center;
     background-color: var(--bg2);
@@ -621,7 +631,16 @@ iframe {
     overflow-x: hidden;
 }
 
-#banner {
+.banner {
+    background-size: cover;
+    /*understand why height is 0*/
+    background-position: top;
+    height: 0px;
+    min-height: 60vh;
+}
+
+
+#contact #banner {
     background-image: linear-gradient(to right, rgb(0 0 0 /10%), rgb(0 0 0 /20%)), url(../images/building.webp);
     width: 120%;
     margin-left: -10%;
@@ -764,6 +783,84 @@ label span {
 #confirmation {
     background-color: var(--bg2);
 
+}
+
+/* article  */
+article {
+    font-size: 1.8rem;
+}
+
+/* 
+article .banner {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 0;
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 56.25%;
+    margin: 0;
+} */
+
+article a:hover {
+    text-decoration: underline;
+}
+
+article h1 {
+    margin-top: 20px;
+    /* margin-bottom: 0; */
+}
+
+article section {
+    padding: 1rem 0;
+    /* padding: 0rem 0;*/
+    scroll-margin-top: 80px;
+
+}
+
+article img {
+    width: 100%;
+}
+
+article h2+img {
+    width: 400px;
+    margin-left: 20px;
+    float: right;
+}
+
+@media (max-width: 780px) {
+    article img {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+}
+
+article section:nth-last-child(2) {
+    border-bottom: solid 2px darkgrey;
+    margin-bottom: 20px;
+}
+
+article ul,
+article ol {
+    margin-bottom: 1.25em;
+    margin-top: 1.25em;
+    padding-left: 2em;
+    color: black;
+}
+
+article li {
+    padding-left: 0.35em;
+    /* margin-left: 1.5rem; */
+    margin-bottom: 0.7em;
+}
+
+article h2 {
+    /* padding-top: 80px; */
+}
+
+article p {
+    color: black;
 }
 
 /*============== Footer ===============*/

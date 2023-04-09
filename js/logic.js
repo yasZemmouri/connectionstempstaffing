@@ -26,3 +26,23 @@ window.addEventListener("scroll", function () {
     console.log('position: ' + offset * 0.5);
 })
 // });
+
+// function scrollToElement(elementID) {
+//     const element = document.getElementById('conclusion');
+//     const offset = 180; // Set the offset here
+//     const elementPosition = element.getBoundingClientRect().top;
+//     const offsetPosition = elementPosition - offset;
+
+//     window.scrollTo({
+//         top: offsetPosition,
+//         behavior: "smooth" // Optional: Smooth scrolling animation
+//     });
+// }
+
+
+
+
+
+
+
+
