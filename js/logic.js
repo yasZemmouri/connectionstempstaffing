@@ -5,6 +5,7 @@
 const preloaderEl = document.getElementById('preloader');
 const heroEl = document.getElementById("hero");
 const bannerEl = document.getElementById('banner');
+const headerEl = document.getElementsByTagName('header')[0];
 
 // Preloader
 if (preloaderEl) {
@@ -16,12 +17,17 @@ if (preloaderEl) {
 
 //parallax function
 window.addEventListener("scroll", function () {
-    let offset = window.pageYOffset;
+    let offset = window.scrollY;
     if (bannerEl) {
         bannerEl.style.transform = `perspective(1000px) rotateX(${offset * 0.14}deg)`;
     } else if (heroEl) {
         heroEl.style.backgroundPositionY = offset * 0.5 + "px";
     }
+
+    // if (offset > 200) {
+    //     headerEl.style.position = "absolute";
+    //     headerEl.style.top = "0";
+    // } else headerEl.style.position = "fixed";
     console.log('offset: ' + offset);
     console.log('position: ' + offset * 0.5);
 })

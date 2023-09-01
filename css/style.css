@@ -31,6 +31,8 @@
     --bg2: #edd7fc;
     --bg2: #FCF7F3;
     /* --bg2: #D7E1E7; */
+    /* Mesures */
+    --header-height: 80px;
 }
 
 /*-------------- General  -------------------*/
@@ -208,7 +210,7 @@ hr {
 
 /*====== Header =======*/
 .header-spacer {
-    height: 80px;
+    height: var(--header-height);
 }
 
 #top-bar {
@@ -218,19 +220,26 @@ hr {
     letter-spacing: .6px;
     font-weight: bold;
     color: var(--txt1);
-    position: fixed;
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
     width: 100%;
     background-color: white;
     z-index: 2;
 }
 
 .navbar {
-    height: 80px;
+    height: var(--header-height);
 }
 
 .navbar .logo {
     height: calc(100% - 1rem);
 }
+
+/* .second-nav {
+    position: 'absolute';
+    bottom: 0;
+} */
 
 header img {
     height: 100%;
@@ -272,11 +281,11 @@ section {
 
 /*===== Hero =====*/
 #hero {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--header-height));
     color: white;
     background-color: #6A00EB;
     /* background-color: green; */
-    background-image: linear-gradient(to left, rgba(0, 100, 250, 0.2), rgba(0, 0, 250, 0.3)), url(../images/stephanie-mccabe-_Ajm-ewEC24-unsplash.jpg);
+    background-image: linear-gradient(to left, rgba(0, 100, 250, 0.2), rgba(0, 0, 250, 0.3)), url(../images/bg6.jpg);
     /*background-position-y is decided by logic.js inline styling.
     /* background-position-y: 0; */
     background-position-x: center;
@@ -878,7 +887,7 @@ article h1 {
 article section {
     padding: 1rem 0;
     /* padding: 0rem 0;*/
-    scroll-margin-top: 80px;
+    scroll-margin-top: var(--header-height);
 
 }
 
@@ -898,6 +907,8 @@ article h2+img {
         margin: 0 0 20px;
     }
 }
+
+
 
 article section:nth-last-child(2) {
     border-bottom: solid 2px darkgrey;
@@ -965,6 +976,16 @@ article p {
 #author-bio h3 {
     font-size: 18px;
     margin-left: 15px;
+}
+
+#help a {
+    color: var(--segundo);
+    word-wrap: break-word;
+}
+
+#help a:hover {
+    color: #0a58ca;
+    font-weight: bold;
 }
 
 /*============== Footer ===============*/
