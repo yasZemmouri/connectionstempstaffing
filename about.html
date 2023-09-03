@@ -37,23 +37,27 @@
 
 <body id="about">
     <!----------- Header -------->
-    <header id="top-bar">
+    <nav class="navbar navbar-expand-md navbar-light bg-white nav-top fixed-top" id="second-nav">
         <div class="container">
-            <!-- rething navbar navbar-expand-sm navbar-light -->
-            <div class="navbar navbar-expand-sm navbar-light">
-                <a href="index.html" class="logo">
-                    <img src="images/logo1.png" alt="Connections, Inc. Logo">
-                </a>
-                <div class="ms-auto">
-                    <!--with no space inside href "tel: xxx"-->
-                    <a href="tel:+18573128733">
-                        <img src="images/phone-icon.svg" alt="Phone icon">
-                        <span class="d-none d-md-inline">(857) 312-8733</span>
-                    </a>
-                </div>
+            <button class="navbar-toggler m-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="toggleMobileMenu">
+                <ul class="navbar-nav text-center align-items-center">
+                    <li><a class="nav-link" href="index.html">home</a></li>
+                    <li><a class="nav-link" href="./about.html">about us</a></li>
+                    <li><a class="nav-link" href="./contact.html">contact us</a></li>
+                    <li><a class="nav-link" href="./confirmation.html">confirmation</a></li>
+                    <li><a class="nav-link" href="#">features</a></li>
+                    <li><a class="nav-link" href="">our portfolio</a></li>
+                </ul>
+                <a href="./contact.html" class="make-inquiry-btn all-btn-link ms-auto d-inline-block">make an
+                    inquiry</a>
             </div>
         </div>
-    </header>
+    </nav>
     <!--============== MAIN ================-->
     <main>
         <section class="banner">
@@ -65,27 +69,6 @@
                 </div>
             </div>
         </section>
-        <nav class="navbar navbar-expand-md navbar-light bg-white sticky-top">
-            <div class="container">
-                <button class="navbar-toggler m-auto" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center" id="toggleMobileMenu">
-                    <ul class="navbar-nav text-center align-items-center">
-                        <li><a class="nav-link" href="index.html">home</a></li>
-                        <li><a class="nav-link" href="./about.html">about us</a></li>
-                        <li><a class="nav-link" href="./contact.html">contact us</a></li>
-                        <li><a class="nav-link" href="./confirmation.html">confirmation</a></li>
-                        <!-- <li><a class="nav-link" href="#">features</a></li>
-                <li><a class="nav-link" href="">our porfolio</a></li> -->
-                    </ul>
-                    <a href="./contact.html" class="make-inquiry-btn all-btn-link ms-auto d-inline-block">make an
-                        inquiry</a>
-                </div>
-            </div>
-        </nav>
         <section id="agency">
             <div class="container">
                 <div class="row">

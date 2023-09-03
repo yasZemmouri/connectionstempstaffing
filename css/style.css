@@ -236,10 +236,40 @@ hr {
     height: calc(100% - 1rem);
 }
 
-/* .second-nav {
-    position: 'absolute';
-    bottom: 0;
-} */
+#second-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+}
+
+.nav-double {
+    top: calc(100vh - 80px);
+    /* position: absolute; */
+}
+
+#second-nav.nav-bottom {
+    background-color: #007dc07d !important;
+    color: white;
+    transition: background-color .7s ease;
+}
+
+#second-nav.nav-bottom ul li a {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+#second-nav.nav-top {
+    background-color: white !important;
+
+    transition: background-color .7s ease;
+
+}
+
+#second-nav.nav-top ul li a {
+    /* color: green; */
+    transition: color 0.3s ease-in-out;
+}
 
 header img {
     height: 100%;
@@ -282,6 +312,7 @@ section {
 /*===== Hero =====*/
 #hero {
     min-height: calc(100vh - var(--header-height));
+    min-height: 100vh;
     color: white;
     background-color: #6A00EB;
     /* background-color: green; */

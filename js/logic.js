@@ -5,7 +5,11 @@
 const preloaderEl = document.getElementById('preloader');
 const heroEl = document.getElementById("hero");
 const bannerEl = document.getElementById('banner');
-const headerEl = document.getElementsByTagName('header')[0];
+// const headerEl = document.getElementsByTagName('header')[0];
+const navbarEl = document.querySelector('.nav-double');
+//get the initial top positoin of the navbar relativerly to it's parent(main)?
+const initialTop = navbarEl.offsetTop;
+
 
 // Preloader
 if (preloaderEl) {
@@ -17,13 +21,27 @@ if (preloaderEl) {
 
 //parallax function
 window.addEventListener("scroll", function () {
-    let offset = window.scrollY;
+    const offset = window.scrollY;
     if (bannerEl) {
         bannerEl.style.transform = `perspective(1000px) rotateX(${offset * 0.14}deg)`;
     } else if (heroEl) {
         heroEl.style.backgroundPositionY = offset * 0.5 + "px";
     }
+    if (offset >= initialTop) {
+        // If it is, change the position of the navbar to fixed
+        navbarEl.style.position = 'fixed';
+        // navbarEl.style.background = 'white';
+        navbarEl.style.top = '0';
+        navbarEl.classList.remove('nav-bottom');
+        navbarEl.classList.add('nav-top');
 
+    } else {
+        // If it's not, keep the position as absolute
+        navbarEl.style.position = 'absolute';
+        navbarEl.style.top = `${initialTop}px`;
+        navbarEl.classList.add('nav-bottom');
+        navbarEl.classList.remove('nav-top');
+    }
     // if (offset > 200) {
     //     headerEl.style.position = "absolute";
     //     headerEl.style.top = "0";

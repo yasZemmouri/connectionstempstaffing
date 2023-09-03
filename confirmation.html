@@ -8,68 +8,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Connections, Inc provides you with qualified caregivers for seniors, persons with disabilities and persons in recovery. We also provide temporary staff. MA.">
-
     <!-- Icons Library -->
     <!-- Font Awesome Library-->
     <script src="https://kit.fontawesome.com/1f1226a002.js" crossorigin="anonymous"></script>
-
     <!--Favicons-->
     <link rel="icon" type="image/x-icon" href="favicon-32.ico">
     <link rel="apple-touch-icon" href="images/favicon-180.png">
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Montserrat:wght@400;700&display=swap"
         rel="stylesheet">
-
     <!-- Style -->
     <!--Bootstrap CSS-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--put custom css under bootstrap css-->
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-
     <!--Bootstrap JS-->
     <script src="js/bootstrap.min.js"></script>
-
     <title>Connections Inc: Home Care & temporary staff in Massachusetts.</title>
 </head>
 
 <body>
-    <header id="top-bar">
+    <nav class="navbar navbar-expand-md navbar-light bg-white nav-top fixed-top" id="second-nav">
         <div class="container">
-            <!-- rething navbar navbar-expand-sm navbar-light -->
-            <div class="navbar navbar-expand-sm navbar-light">
-                <a href="index.html">
-                    <img src="images/logo1.png" alt="Connections, Inc. Logo">
-                </a>
-                <div class="ms-auto">
-                    <a href="tel: +18573128733">
-                        <img src="images/phone-icon.svg" alt="Phone icon">
-                        <span class="d-none d-md-inline">(857) 312-8733</span>
-                    </a>
-                </div>
+            <button class="navbar-toggler m-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="toggleMobileMenu">
+                <ul class="navbar-nav text-center align-items-center">
+                    <li><a class="nav-link" href="index.html">home</a></li>
+                    <li><a class="nav-link" href="./about.html">about us</a></li>
+                    <li><a class="nav-link" href="./contact.html">contact us</a></li>
+                    <li><a class="nav-link" href="./confirmation.html">confirmation</a></li>
+                    <li><a class="nav-link" href="#">features</a></li>
+                    <li><a class="nav-link" href="">our portfolio</a></li>
+                </ul>
+                <a href="./contact.html" class="make-inquiry-btn all-btn-link ms-auto d-inline-block">make an
+                    inquiry</a>
             </div>
         </div>
-    </header>
+    </nav>
     <!--================= Main ==============-->
     <main class="text-center flex-fill d-flex align-items-center justify-content-center">
         <section id="confirmation">
             <div class="container ">
-              <h2>Your message was sent. Thank you!</h2>
-              <p>Someone will get back to you soon</p>
+                <h2>Your message was sent. Thank you!</h2>
+                <p>Someone will get back to you soon</p>
             </div>
-          </section>
+        </section>
     </main>
     <!--================= Footer ===========-->
     <footer>
-        <div class="container">
-            Connections &copy; 2021. All Rights Reserved.
-        </div>
+        <div class="container"> Connections &copy; 2021. All Rights Reserved. </div>
     </footer>
-
 </body>
 
 </html>
