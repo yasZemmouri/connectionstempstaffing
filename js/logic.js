@@ -8,7 +8,8 @@ const bannerEl = document.getElementById('banner');
 // const headerEl = document.getElementsByTagName('header')[0];
 const navbarEl = document.querySelector('.nav-double');
 //get the initial top positoin of the navbar relativerly to it's parent(main)?
-const initialTop = navbarEl.offsetTop;
+let initialTop = 0;
+(navbarEl !== null) ? initialTop = navbarEl.offsetTop : initialTop = 0;
 
 
 // Preloader
